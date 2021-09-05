@@ -9,6 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href = "node_modules/bootstrap-social/bootstrap-social.css"> 
     <link rel="stylesheet" href = "style.css">
 
     <title>Ristorante Con Fusion: About Us</title>
@@ -16,6 +18,30 @@
 </head>
 
 <body>
+
+    <nav class = "navbar navbar-dark navbar-expand-sm bg-primary fixed-top"> 
+        <div class = "container">
+            <button class="navbar-toggle" type ="button" data-toggle="collapse" data-target="#Navbar" >
+               <!-- hide and view the navbar for xtra small screen-->
+                <!-- data-toggle attr is a jvscript component usage in bootstrap -->
+            <span class = " navbar-toggler-icon"></span>
+            </button>
+            <a class = "navbar-brand mr-auto" href="###"> 
+                Ristorante Con Fusion
+            </a>
+
+            <div class = "collapse navbar-collapse" id ="Navbar"> 
+            <ul class = "navbar-nav mr-auto"> <!--specify the right margin-->
+                <li class = "nav-item"> <a class = "nav-link" href = "index.html"><span class="fa fa-home"></span> HOME</a></li>
+                <li class = "nav-item active"> <a class = "nav-link" href = "aboutus.html"> <span class="fa fa-info"></span>ABOUT</a></li>
+                <li class = "nav-item"> <a class = "nav-link" href = "#"><span class="fa fa-list fa-lg"></span> MENU</a></li>
+                <li class = "nav-item"> <a class = "nav-link" href = "#"><span class="fa fa-address-card fa-lg"></span> CONTACT</a></li>
+            </ul>
+        </div>
+        </div>
+
+    </nav>
+
 
     <header class="jumbotron">
         <div class="container">
@@ -31,11 +57,14 @@
     </header>
 
     <div class = "container">
-        <div class ="row row-content align-items-center">
-            <div class = "">
+        <div class ="row">
+            <ol class = "col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">HOME</a> </li>
+                <li class="breadcrumb-item active">ABOUT</li>
+            </ol>
                <h3>About Us</h3>
                <hr>
-            </div>
+            
         </div>
 
         <div class="container">
@@ -83,8 +112,8 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
